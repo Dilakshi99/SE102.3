@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h3>Car Registration</h3>
+       <form name="g" method="post" action="submit.php">
+           <table>
+            <tr>
+                <td>Owner Name</td>
+                <td><input type="text" name="on" placeholder="Owner Name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" placeholder="Email"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="number" name="phone" placeholder="Phone Number"></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td><select name="Country"><option value="s">Sri Lanka</option></select></td>
+            </tr>
+            <tr>
+                <td>Car Model</td>
+                <td><input type="text" name="cm"></td>
+            </tr>
+            <tr>
+                <td>Manufacture Year</td>
+                <td><select name="Year"><option value="y">Select Year</option></select></td>
+            </tr>
+            <tr>
+                <td>Transmission</td>
+                <td><input type="radio" name="trans" value="M">Manual</td>
+                <td><input type="radio" name="trans" value="A">Auto</td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td><textarea name="other" rows="4" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="conditions and tetms">I agree to the conditions and terms</td>
+            </tr>
+            </table>
+            <br>
+            <input type="submit" name="log" value="Submit">
+            <input type="reset" name="re" value="Reset">
+       </form>
+    </center>
+</body>
+</html>

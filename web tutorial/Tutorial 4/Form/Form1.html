@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+        <h1>Registration Form</h1>
+        <form method="post" action="submit.php">
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fn"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="ln"></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="number" name="mno"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="radio" name="gen" value="M">Male</td>
+                    <td><input type="radio" name="gen" value="F">Female</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Favourit Music</td>
+                    <td><input type="checkbox" name="POP" value="1">POP</td>
+                    <td><input type="checkbox" name="Rock" value="2">Rock</td>
+                    <td><input type="checkbox" name="Other" value="3">Other</td>
+                </tr>
+                <tr>
+                    <td>Additional Details</td>
+                    <td><textarea name="ad" rows="4" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="terms and conditions">I agree to the terms and conditions</td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" name="log" value="Submit">
+            <input type="reset" name="re" value="Reset">
+        </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload=function(){
+            getMrks();
+        }
+        function getMrks()
+        {
+            var total=0;
+            for(var i=0;i<5;i++)
+            {
+                var marks=parseInt(window.prompt("Enter your marks"));
+
+                total+=marks;
+                avg=total/5;
+            }
+            document.writeln("Total Mark is: ",total);
+            document.writeln("Average Mark is: ",avg);
+            if(avg>30)
+            {
+                alert("Congrats! you passed");
+            }
+            else
+            {
+                alert("Better luck next time");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color-button{
+            width: 100%;
+            height: 50px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="color-button" id="redButton" onmouseover="changeBackgroudColor('red')"
+    onmouseout="restoreBackgroundColor('red')">Red</button>
+    <button class="color-button" id="greenButton" onmouseover="changeBackgroudColor('red')"
+    onmouseout="restoreBackgroundColor('green')">Green</button>
+    <button class="color-button" id="blueButton" onmouseover="changeBackgroudColor('red')"
+    onmouseout="restoreBackgroundColor('blue')">Blue</button>
+    <script>
+        function changeBackgroudColor(color){
+            document.body.style.backgroundColor=color;
+        }
+        
+        function restoreBackgroundColor(color){
+            document.body.style.backgroundColor="white";
+        } 
+    </script>
+</body>
+</html>
